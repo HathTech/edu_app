@@ -2,7 +2,11 @@
 
 Education UI Concept inspiration from dribbble
 
-## This is still in development.
+## The UI is not complete and I am working on it. If you have any suggestions please create a issue.
+
+- [x] Splash Screen
+- [ ] Page 1
+- [ ] Page 2
 
 [ https://dribbble.com/shots/7190300-Education-App/attachments/189089?mode=media](https://dribbble.com/shots/7190300-Education-App/attachments/189089?mode=media)
 
