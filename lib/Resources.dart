@@ -39,7 +39,7 @@ class Resources extends StatelessWidget {
                       image: DecorationImage(
                     fit: BoxFit.fitWidth,
                     image: AssetImage(
-                      "assets/splash.jpg",
+                      "assets/1.jpg",
                     ),
                   )),
                   child: Padding(
@@ -52,7 +52,7 @@ class Resources extends StatelessWidget {
                           height: 108,
                         ),
                         Text(
-                          "All  Subjects",
+                          "All Subjects",
                           textAlign: TextAlign.left,
                           style: TextStyle(
                               color: Colors.white,
@@ -148,99 +148,68 @@ class Resources extends StatelessWidget {
             ),
           ),
           Container(
-            height: 160,
+            height: 210,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: 3,
               itemBuilder: (BuildContext context, int index) {
-                return Padding(
-                  padding: const EdgeInsets.only(left: 16.0, right: 16),
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(24.0)),
-                    child: Container(
-                      height: 160,
-                      width: 250,
-                      decoration: BoxDecoration(
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color(0xfffafdff),
-                            blurRadius:
-                                24.0, // has the effect of softening the shadow
-                            spreadRadius:
-                                10.0, // has the effect of extending the shadow
-                          )
-                        ],
-                        borderRadius: BorderRadius.all(Radius.circular(24)),
-                        image: DecorationImage(
-                            image: AssetImage("assets/splash.jpg"),
-                            fit: BoxFit.fitWidth),
-                      ),
-                    ),
-                  ),
-                );
-              },
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Text(
-                  "All Subjects",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18,
-                      fontWeight: FontWeight.w900),
-                ),
-                Text(
-                  "See all",
-                  style: TextStyle(
-                      color: Colors.grey[400],
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold),
-                )
-              ],
-            ),
-          ),
-          Container(
-            height: 160,
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: 3,
-              itemBuilder: (BuildContext context, int index) {
-                return Padding(
-                  padding: const EdgeInsets.only(left: 16.0, right: 16),
-                  child: Card(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(24.0)),
-                    child: Container(
-                      height: 160,
-                      width: 250,
-                      decoration: BoxDecoration(
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color(0xfffafdff),
-                            blurRadius:
-                                24.0, // has the effect of softening the shadow
-                            spreadRadius:
-                                10.0, // has the effect of extending the shadow
-                          )
-                        ],
-                        borderRadius: BorderRadius.all(Radius.circular(24)),
-                        image: DecorationImage(
-                            image: AssetImage("assets/splash.jpg"),
-                            fit: BoxFit.fitWidth),
-                      ),
-                    ),
-                  ),
-                );
+                return CourseCard("Figma Design", "24", "assets/1.jpg");
               },
             ),
           ),
         ],
       ),
     ));
+  }
+}
+
+class CourseCard extends StatelessWidget {
+  final String title, count, imagePath;
+
+  CourseCard(
+    this.title,
+    this.count,
+    this.imagePath,
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.all(16.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          Container(
+            height: 140.0,
+            width: 250.0,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage(imagePath), fit: BoxFit.cover),
+                borderRadius: BorderRadius.circular(24),
+                boxShadow: <BoxShadow>[
+                  BoxShadow(
+                      color: Colors.grey,
+                      blurRadius: 15.0,
+                      offset: Offset(0.75, 0.95))
+                ],
+                color: Colors.grey),
+          ),
+          SizedBox(
+            height: 16,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 4.0),
+            child: Text(
+              '$title',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16.0),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
