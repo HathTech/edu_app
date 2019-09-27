@@ -1,16 +1,26 @@
 # edu_app
 
-A new Flutter project.
+Education UI Concept inspiration from dribbble
 
-## Getting Started
+[ https://dribbble.com/shots/7190300-Education-App/attachments/189089?mode=media](https://dribbble.com/shots/7190300-Education-App/attachments/189089?mode=media)
 
-This project is a starting point for a Flutter application.
+![UI IMAGE](https://cdn.dribbble.com/users/2461751/screenshots/7190300/media/f44052c57d6ff29b18bf4b0c7cabc866.png)
 
-A few resources to get you started if this is your first Flutter project:
+### :heart: Found this project useful?
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+If you found this project useful, then please consider giving it a :star: on Github and sharing it with your friends via social media.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Facing flutter integration with firebase checkout our new app - [FlutterFire](http://bit.ly/2kOhZ0P)
+
+#### Youtube demo -
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=L62kvR9clHk"><img src="https://img.youtube.com/vi/L62kvR9clHk/0.jpg" alt="IMAGE ALT TEXT"></a>
+</div>
+
+## Project Created & Maintained By
+
+### HathTech Innovations Pvt. Ltd.
+
+<a href="https://twitter.com/hathtech"><img src="https://github.com/aritraroy/social-icons/blob/master/twitter-icon.png?raw=true" width="60"></a>
+<a href="https://facebook.com/hathtech"><img src="https://github.com/aritraroy/social-icons/blob/master/facebook-icon.png?raw=true" width="60"></a>
