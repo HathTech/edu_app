@@ -61,6 +61,7 @@ class MyHomePage extends StatelessWidget {
                 style: TextStyle(
                     color: Color(0xffE1F5FF),
                     fontSize: 18,
+                    letterSpacing: 0.9,
                     fontWeight: FontWeight.bold),
               ),
               SizedBox(
@@ -72,7 +73,8 @@ class MyHomePage extends StatelessWidget {
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 48,
-                    fontWeight: FontWeight.w900),
+                    letterSpacing: 1.9,
+                    fontWeight: FontWeight.w700),
               ),
               SizedBox(
                 height: 16,
@@ -83,6 +85,7 @@ class MyHomePage extends StatelessWidget {
                 style: TextStyle(
                     color: Color(0xffE1F5FF),
                     fontSize: 18,
+                    letterSpacing: 1.9,
                     fontWeight: FontWeight.bold),
               )
             ],
